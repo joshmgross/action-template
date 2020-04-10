@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  fold:
+  main:
     runs-on: ubuntu-latest
 
     steps:

@@ -32,6 +32,6 @@ enum BackgroundColor {
 }
 
 export function logInfo(message: string): void {
-    const textFormat = `${TextEffect.Blink}${ForegroundColor.Cyan}${BackgroundColor.White}`;
+    const textFormat = `${TextEffect.Underscore}${ForegroundColor.Cyan}${BackgroundColor.Black}`;
     console.log(`${textFormat}${message}${ColorReset}`);
 }
