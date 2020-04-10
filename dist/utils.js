@@ -33,7 +33,7 @@ var BackgroundColor;
     BackgroundColor["White"] = "\u001B[47m";
 })(BackgroundColor || (BackgroundColor = {}));
 function logInfo(message) {
-    const textFormat = `${TextEffect.Blink}${ForegroundColor.Cyan}${BackgroundColor.White}`;
+    const textFormat = `${TextEffect.Underscore}${ForegroundColor.Cyan}${BackgroundColor.Black}`;
     console.log(`${textFormat}${message}${ColorReset}`);
 }
 exports.logInfo = logInfo;
