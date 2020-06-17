@@ -11,7 +11,7 @@ async function run(): Promise<void> {
 
         utils.logInfo("🎉🎈🎊 Action complete 🎉🎈🎊");
     } catch (error) {
-        core.error(`❌ Action failed with error: ${error}`);
+        core.setFailed(`❌ Action failed with error: ${error}`);
     }
 }
 
