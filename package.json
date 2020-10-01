@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/joshmgross/action-template#readme",
   "dependencies": {
-    "@actions/core": "^1.2.4"
+    "@actions/core": "^1.2.6"
   },
   "devDependencies": {
     "@types/node": "^12.12.47",
