@@ -7,5 +7,5 @@ inputs:
     description: 'a great description of your input'
     default: 'a suitable default value'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
