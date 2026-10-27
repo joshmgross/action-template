@@ -1,50 +1,44 @@
 {
   "name": "action-template",
   "version": "1.0.0",
-  "description": "A GitHub Action",
-  "main": "dist/index.js",
   "private": true,
-  "engines": {
-    "node": ">=24.0.0"
-  },
-  "scripts": {
-    "build": "tsc",
-    "pack": "node esbuild.config.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
-    "format": "prettier --write src",
-    "format-check": "prettier --check src",
-    "all": "npm run build && npm run format && npm run lint && npm run pack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joshmgross/action-template.git"
-  },
+  "description": "A GitHub Action",
   "keywords": [
     "Actions",
     "node"
   ],
-  "author": "joshmgross",
-  "license": "MIT",
+  "homepage": "https://github.com/joshmgross/action-template#readme",
   "bugs": {
     "url": "https://github.com/joshmgross/action-template/issues"
   },
-  "homepage": "https://github.com/joshmgross/action-template#readme",
+  "license": "MIT",
+  "author": "joshmgross",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshmgross/action-template.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "pack": "node esbuild.config.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "oxlint",
+    "format": "oxfmt src package.json",
+    "format-check": "oxfmt --check src package.json",
+    "all": "npm run build && npm run format && npm run lint && npm run pack"
+  },
   "dependencies": {
     "@actions/core": "^3.0.1"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "@types/node": "^24.19.2",
     "esbuild": "^0.25.5",
-    "eslint": "^10.13.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.7",
-    "eslint-plugin-simple-import-sort": "^14.0.0",
-    "globals": "^17.13.0",
-    "prettier": "^3.1.1",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.72.0"
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.89.0",
+    "typescript": "^5.9.3"
   },
-  "type": "module"
+  "engines": {
+    "node": ">=24.0.0"
+  }
 }
