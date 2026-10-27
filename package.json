@@ -21,7 +21,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "pack": "node esbuild.config.mjs",
+    "pack": "rolldown -c",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "oxlint",
     "format": "oxfmt src package.json",
@@ -33,9 +33,9 @@
   },
   "devDependencies": {
     "@types/node": "^24.19.2",
-    "esbuild": "^0.25.5",
     "oxfmt": "^0.74.0",
     "oxlint": "^1.89.0",
+    "rolldown": "^1.2.15",
     "typescript": "^5.9.3"
   },
   "engines": {
